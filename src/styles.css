@@ -1,0 +1,94 @@
+/* Add application styles & imports to this file! */
+@import '~@ionic/angular/css/ionic.bundle.css';
+
+.centralized {
+  text-align: center;
+}
+
+:root {
+  --ion-font-family: 'Varela Round', sans-serif;
+
+  /*  barra superior */
+  --ion-toolbar-background: #ffebc2;
+  --ion-toolbar-color: #252422;
+
+  /*Cor do app*/
+  --ion-background-color: #fff5e4;
+
+  /*Barra das tab*/
+  --ion-tab-bar-background: #ffebc2;
+  --ion-tab-bar-color: #252422;
+  --ion-tab-bar-color-selected: #c1121f;
+
+  /*Cor da fonte*/
+  --ion-text-color: #252422;
+  --ion-text-color-rgb: 255, 255, 255;
+
+  /*Cor dos cards*/
+  --ion-card-background: #ffd7821e;
+  --ion-item-background: transparent;
+
+  --ion-button-background: #ffebc2;
+}
+
+ion-button {
+  --background: #f5a300;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.content {
+  max-width: 500px;
+  margin: auto;
+  text-align: center;
+}
+
+.img-item {
+  padding: 20px;
+  padding-bottom: 0px;
+  width: 100%;
+  max-width: 400px;
+
+  animation: animation-img-item 4s infinite alternate;
+}
+
+ion-thumbnail {
+  animation: floating 4s infinite alternate;
+}
+
+ion-card {
+  border-radius: 15px;
+  cursor: pointer;
+  margin-bottom: 5px;
+  transition-duration: 500ms;
+}
+
+ion-card:hover {
+  transform: scale(1.03);
+}
+
+@keyframes floating {
+  0% {
+    transform: translate(0px, 5px);
+  }
+
+  100% {
+    transform: translate(0px, -5px);
+  }
+}
+
+@keyframes animation-img-item {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+
+  50% {
+    transform: rotate(1deg) scale(1.02);
+  }
+
+  100% {
+    transform: rotate(-1deg) scale(1.04);
+  }
+}
